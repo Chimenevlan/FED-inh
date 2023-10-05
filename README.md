@@ -161,6 +161,7 @@ Student 2 Leanne
 - Mijn nav werkt niet `
 - Hoe doe ik ook alweer de juiste lettertype importeren 
 - Hoe verwijder je iets op GitHub
+
 De website van Leanne is zichtbaar in GitHub en de afbeeldingen zijn te zien.
 
 Student 3 Martin 
