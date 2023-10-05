@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "legofont";
+    src:url("../fonts/CeraPro-Bold.woff2") format("woff2");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "legofont";
+    src:url("../fonts//CeraPro-Medium.woff2") format("woff2");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "legofont";
+    src:url("../fonts/CeraPro-Regular.woff2") format("woff2");
+    font-weight: 400;
+  }
+
+:root {
+    --color-text-zwart: #000000;
+    --color-text-wit: #FFFFFF; 
+    --color-text-link: #016DB7;
+
+    --background-button-zwart: #000000;
+    --background-button-wit: #FFFFFF; 
+}
+
+
+
+/* 
+standaard
+ */
+
+h1 {
+    display: none;
+    font-family: legofont;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none; /* Dit verwijdert de marker */
+    padding-left: 0; /* Dit verwijdert de standaard padding, wat vaak gewenst is als je de markers verwijdert */
+}
+
+body {
+
+    margin:0;
+  
+  }
+
+/* 
+header 
+*/
+
+
+header section:first-of-type {
+
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+header section:first-of-type h2 {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0.5em;
+}
+
+header section:first-of-type a {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+header section:nth-of-type(2) {
+
+    background-color: #FFFFFF; 
+    display: flex;
+    flex-direction: row;
+}

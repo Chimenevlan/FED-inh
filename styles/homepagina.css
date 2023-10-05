@@ -1,0 +1,163 @@
+
+
+main section:first-of-type {
+    background-color: #6EB9E6;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+main section:first-of-type h2 {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+main section:first-of-type p {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 1em;
+    order: -1;
+}
+
+main section:first-of-type a:first-of-type {
+    font-family: legofont;
+    font-weight: 500;
+    font-size: 1em;
+    order: -2;
+
+    display: inline-block; /* Hiermee kun je breedte en hoogte instellen voor het <a> element */
+    background-color: var(--background-button-zwart); /* Achtergrondkleur */
+    color: var(--color-text-wit); /* Tekstkleur */
+    width: 150px; /* Breedte */
+    height: 50px; /* Hoogte */
+    line-height: 50px; /* Verticaal centreren van de tekst */
+    text-align: center; /* Horizontaal centreren van de tekst */
+    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+    border-radius: 5px; /* Optioneel: Ronde hoeken toevoegen */   
+}
+
+main section:first-of-type a:first-of-type:hover {
+    background-color: var(--background-button-wit); /* Achtergrondkleur */
+    color: var(--color-text-zwart); /* Tekstkleur */
+}
+
+main section:first-of-type a:nth-of-type(2) {
+    font-family: legofont;
+    font-weight: 500;
+    font-size: 1em;
+    order: -3;
+    
+    display: inline-block; /* Hiermee kun je breedte en hoogte instellen voor het <a> element */
+    background-color: var(--background-button-zwart); /* Achtergrondkleur */
+    color: var(--color-text-wit); /* Tekstkleur */
+    width: 150px; /* Breedte */
+    height: 50px; /* Hoogte */
+    line-height: 50px; /* Verticaal centreren van de tekst */
+    text-align: center; /* Horizontaal centreren van de tekst */
+    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+    border-radius: 5px; /* Optioneel: Ronde hoeken toevoegen */
+}
+
+main section:first-of-type a:nth-of-type(2):hover {
+    background-color: var(--background-button-wit); /* Achtergrondkleur */
+    color: var(--color-text-zwart); /* Tekstkleur */
+}
+
+main section:first-of-type img {
+    width:100%;
+}
+
+
+
+main section:nth-of-type(2) h2 {
+    display: none;
+}
+
+main section:nth-of-type(2) ul li a {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: var(--color-text-zwart);            
+    text-decoration: none;    /* chatgpt */
+
+}
+
+main section:nth-of-type(2) ul li a:hover {
+    text-decoration: underline;    /* chatgpt */
+
+}
+
+
+main section:nth-of-type(3) h2 {
+    font-family: legofont;
+    font-weight: 400;
+}
+
+main section:nth-of-type(3) ul li {
+    background-color: gold;
+
+    width:20em; 
+
+    display:flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(3) ul li div {
+    position: relative;
+
+    order:-100;
+    
+    background-color: #f44336;
+}
+
+main section:nth-of-type(3) ul li div button {
+    position: absolute;
+    top:1em;
+    left:1em;
+    color: red;
+}
+
+main section:nth-of-type(3) ul li div a {
+    display: block;
+    background-color: yellow;
+
+    position: relative;
+    padding:1.5em;
+}
+
+main section:nth-of-type(3) ul li div a p {
+    margin:0;
+
+    position:absolute;
+    left:1em;
+    bottom:1em;
+}
+
+main section:nth-of-type(3) ul li div a img {
+    width:100%;
+}
+
+main section:nth-of-type(4) {
+    background-color: #E5F3FF;
+}
+
+main section:nth-of-type(4) h2 {
+    font-family: legofont;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+main section:nth-of-type(5) {
+    background-color: #EAEBEF;
+}
+
+main section:nth-of-type(5) h2 {
+    font-family: legofont;
+    font-weight: 400;
+}
+
+main section:nth-of-type(5) ul li:first-of-type {
+    background-color: #FDD629 ;
+    width: 20em;
+}
