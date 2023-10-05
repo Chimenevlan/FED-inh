@@ -165,11 +165,17 @@ Student 2 Leanne
 De website van Leanne is zichtbaar in GitHub en de afbeeldingen zijn te zien.
 
 Student 3 Martin 
-
-
+- Hoe krijg ik dit icoon helemaal links
+- Hoe maak ik dit carousel
+- Hoe is dit handig om te maken met grid.
+- Moeten alle buttons naar iets leiden?
 
 Student 4 Kim 
-   
+- Lettertype toepassen werkt niet bij de  H2 (?)
+- background-size: cover; geeft error aan?
+- Hoe fix ik de nav button
+
+ 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
