@@ -212,16 +212,35 @@ Student 4 Kim
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - hamburger menu werkt! Heel blij mee. Nu wel nog stylen.
+  - Grootste gedeelte eerste pagina is klaar. Nog wat kleine dingen doen.
+  - Beginnen met tweede pagina.
+  - Oefenen met @media 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Student 1 Chimene 
+- meer uitleg over @media Queries.
+- wil een border om mijn element, maar ik krijg het niet voor elkaar.
+- Jusitify conent lijkt niet te werken
+- Hoe krijg ik een afbeelding links en tekst rechts met flex? 
+
+
+Student 2 Leanne 
+- Het juiste lettertype werkt niet
+- Hoe doe je de zoekbalk in de header een rij naar onder
+- Hoe zet ik de H2 en A (Tickets) op de goede positie
+- Hoe verander ik volgorde van afbeelding + plaatje? Met flex? Bij “Uitgelicht”
+- Het paarse lijntje onder “Recent bekeken” en “Populair” hoe kan ik dat het beste doen?
+- Hoe kan ik het beste het zwarte randje in de header maken? Met <p>?
+
+Student 3 Martin 
+
+
+Student 4 Kim 
+
 
 
   ### Verslag van meeting
