@@ -7,48 +7,52 @@
     <link rel="icon" type="image/Legologo" href="images/Legologo.png">
 
     <link rel="stylesheet" href="styles/basis.css">
-     <link rel="stylesheet" href="styles/homepagina.css">
+    <link rel="stylesheet" href="styles/homepagina.css">
    
 </head>
 <body>
     <header>
-        <h1>Welkom bij Lego.nl</h1>
+        <h1 class="visually-hidden">Welkom bij Lego.nl</h1>
         <section> 
             <h2>GRATIS bezorging voor bestellingen vanaf €55!*</h2>
             <a href="#" target="_blank">Meer info</a>
             <button id="close-button">&times;</button>
         </section>
+
         <section>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="images/Legologo.png" alt="Logo van Lego" width="40" height="40"> 
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/zoeken.png" alt="Zoeken" width="30" height="30">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/legopoppetje.png" alt="Lego poppetje" width="30" height="30">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/hart.png" alt="Favorieten" width="30" height="30">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/tas.png" alt="In tas" width="30" height="30">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <nav> 
+            <a href="#" aria-label="Lego logo">
+                <img src="images/Legologo.png" alt="Logo van Lego"> 
+            </a>
+
+            <button aria-hidden="true"><img src="images/menuknop.png" alt="Menu"/></button>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/zoeken.png" alt="Zoeken">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/legopoppetje.png" alt="Lego poppetje">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/hart.png" alt="Favorieten">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tas.png" alt="In tas">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <button>sluit</button>
                 <ul>
                     <li><a href="#">Speelplek</a></li>
                     <li><a href="#">Winkelen</a></li>
@@ -61,66 +65,87 @@
                     <li><a href="#">Nederland</a></li>
                 </ul>
             </nav>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Winkelen</a>
+                    </li>
+                    <li>
+                        <a href="">Ontdekken</a>
+                    </li>
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                </ul>
+            </nav>
+
         </section>
+        
     </header>
 
     <main>
+
         <section>
-            <h2>Check in en blijf cool</h2>
-            <p>Welkom bij de nieuwe LEGO® Icons Skihut.</p>
-            <a href="#" >Nu winkelen</a>
-            <a href="#" >Meer info</a>
-            <img src="images/skihut.webp" alt="Lego skihut" width="500" height="500">
+            <h2>De magie borrelt op</h2>
+            <p>Roep betoverend plezier op met de set Hocus Pocus: het huisje van de Sanderson-zussen.</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        Nu winkelen
+                        <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-lm07h6-0 kNvokt Chevronstyles__ChevronIcon-sc-1qql32m-0 cEWHhy HeroBannerstyles__StyledChevron-sc-22eq7p-13 bxeWrb"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        Meer info
+                        <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-lm07h6-0 kNvokt Chevronstyles__ChevronIcon-sc-1qql32m-0 cEWHhy HeroBannerstyles__StyledChevron-sc-22eq7p-13 bxeWrb"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                    </a>
+                </li>
+            </ul>
+            <img src="images/hocuspocusklein.webp" alt="Lego Hocus Pocus" >
+            <img src="images/disney-hocus-pocus-logo.png" alt="Hocus pocus logo">
         </section>
+
+        <section></section>
+
         <section> 
-            <h2>Keuzemenu</h2>
+            <h2 class="visually-hidden">Keuzemenu</h2>
             <ul>
                 <li>
                     <a href="#" >
                         <h3>Nieuw</h3>
-                        <img src="images/Nieuw.webp" alt="nieuwe lego sets" width="60" height="48.75">
+                        <img src="images/Nieuw.webp" alt="nieuwe lego sets">
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <h3>Exclusieve items</h3>
-                        <img src="images/Exclusieve.webp" alt="Exclusieve items" width="60" height="48.75">
+                        <img src="images/Exclusieve.webp" alt="Exclusieve items">
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <h3>Aanbiedingen</h3>
-                        <img src="images/Aanbiedingen.webp" alt="Aanbiedingen" width="60" height="48.75">
+                        <img src="images/Aanbiedingen.webp" alt="Aanbiedingen">
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <h3>Marvel</h3>
-                        <img src="images/Marvel.webp" alt="Marvel" width="60" height="48.75">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>NINJAGO®</h3>
-                        <img src="images/NINJAGO.webp" alt="NINJAGO®" width="60" height="48.75">
+                        <img src="images/Marvel.webp" alt="Marvel">
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <h3>Disney</h3>
-                        <img src="images/Disney.webp" alt="Disney" width="60" height="48.75">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>LEGO® DREAMZzz™</h3>
-                        <img src="images/Dreamzz.webp" alt="LEGO® DREAMZzz™" width="60" height="48.75">
+                        <img src="images/Disney.webp" alt="Disney">
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <h3>Insiders</h3>
-                        <img src="images/Insiders.webp" alt="Insiders" width="60" height="48.75">
+                        <img src="images/insiders.png" alt="Insiders">
                     </a>
                 </li>
             </ul>
@@ -129,17 +154,31 @@
             <h2>Aanbevolen voor jou</h2>
             <ul>
                 <li>
-                    <h3>Concorda </h3>
-                    <p>sterren</p>
-                    <p>€199,99</p>
+                    <h3>Skihut</h3>
+                    <p aria-label="4 sterren waardering door 1467 kopers">★★★★</p>
+                    <p>€99,99</p>
                     <button>In tas</button>
 
                     <div>
                         <a href="#">
                             <p>Nieuw</p>
-                            <img src="images/Concorde.webp" alt="Concorda" width="300" height="215">
+                            <img src="images/10325.png" alt="Skihut lego set">
                         </a>
-                        <button aria-label="Like Concorda">♡</button>
+                        <button aria-label="Like Skihut">♡</button>
+                    </div>
+                </li>
+                <li>
+                    <h3>Vikingdorp</h3>
+                    <p aria-label="5 sterren waardering door 1467 kopers">★★★★★</p>
+                    <p>€139,99</p>
+                    <button>In tas</button>
+
+                    <div>
+                        <a href="#">
+                            <p>Nieuw</p>
+                            <img src="images/21343.png" alt="Skihut lego set">
+                        </a>
+                        <button aria-label="Like Vikindorp">♡</button>
                     </div>
                 </li>
             </ul>
@@ -148,9 +187,16 @@
             <h2>Help ons om jou de beste persoonlijke benadering te bieden!</h2>
             <p>Help ons om jou de beste persoonlijke benadering te bieden! Geef ons toestemming om sitecookies te gebruiken, zodat wij een belevenis kunnen creëren die je zeker leuk zult vinden!
             </p>
-            <a href="#" target="_blank">Tijd om dit te doen</a>
-            <a href="#" target="_blank">Vertel me meer</a>
-            <img src="images/Helpons.png" alt="Help ons" width="100" height="100">
+            <ul>
+                <li>
+                    <a href="#" target="_blank">Tijd om dit te doen</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Vertel me meer</a>
+                </li>
+            </ul>
+            <img src="images/Helpons.png" alt="Help ons">
+            <img src="images/cookies-afb23abdf31dc35a6f446c474ef33678.png" alt="cookies">
         </section>
         <section>
             <h2>Een lidmaatschap biedt je nu nog meer!</h2>
@@ -158,20 +204,31 @@
                 <li>
                     <h3>Meer punten</h3>
                     <p>Krijg punten wanneer je iets koopt – en ook wanneer je je sets registreert!</p>
-                    <img src="images/Meerpunten.webp" alt="Meer punten via lidmaatschap" width="350" height="242">
+                    <img src="images/Insiders-meer-punten.jpeg" alt="Meer punten via lidmaatschap">
                 </li>
                 <li>
                     <h3>Meer beloningen</h3>
                     <p>LEGO® items, kortingen, LEGOLAND-tickets en meer, alleen voor leden!</p>
-                    <img src="images/Meerbeloningen.webp" alt="Meer beloningen via lidmaatschap" width="350" height="242">
+                    <img src="images/Insiders-meer-beloningen.jpeg" alt="Meer beloningen via lidmaatschap">
                 </li>
+                <li>
+                    <h3>Meer voordelen</h3>
+                    <p>Leden krijgen vroege toegang tot de populairste sets, plus speciale cadeaus bij aankopen.</p>
+                    <img src="images/Insiders-meer-voordelen.jpeg" alt="Meer voordelen via lidmaatschap">
+                </li>
+                <li>
+                    <h3>Meer toegang</h3>
+                    <p>Inspiratie, speelactiviteiten voor het hele gezin, community's en andere geweldige dingen.</p>
+                    <img src="images/Insiders-meer-toegang.jpeg" alt="Meer toegang via lidmaatschap">
+                </li>
+
             </ul>
             <a href="#">Nu aanmelden</a>
             <a href="#">Aanmelden</a>
         </section>
         <section>
             <a href="#">
-                <img src="images/ExpressShipping-Home-202012-Hero-Short-Small.webp" alt="Bestel een lego set en bouw morgen!" width="390" height="171">
+                <img src="images/ExpressShipping-Home-202012-Hero-Short-Small.webp" alt="Bestel een lego set en bouw morgen!">
             </a>
             <p>Bestel vandaag en bouw morgen voor slechts 6,99€! Met gegarandeerde bezorging de volgende dag kun je sneller dan ooit aan je LEGO® avontuur beginnen.</p>
             <a href="#">Nu winkelen</a>

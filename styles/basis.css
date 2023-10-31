@@ -20,10 +20,30 @@
     --color-text-zwart: #000000;
     --color-text-wit: #FFFFFF; 
     --color-text-link: #016DB7;
+   
+    --color-yellow: #fecf27;
+    --color-purple: #956f9e;
+  
 
     --background-button-zwart: #000000;
     --background-button-wit: #FFFFFF; 
+    --background-button-oranje: #fd8023; 
+   
+    --backgroundcolor-persoonlijk: #e5f3ff;
+    --backgroundcolor-footer: #211d47;
+    --background-zwart: #000000;
+    --background-lightgrey: #f7f7f7;
+    --background-grey: #eaebef;
+    --background-blue: #00a3da;
+    --background-darkblue: #001e50;
+    --background-green: #02ae4c;
+    --background-pink: #f6adcd;
+    --background-yellow: #fecf27;
+    
+    
+    
 }
+
 
 
 
@@ -31,10 +51,14 @@
 standaard
  */
 
-h1 {
-    display: none;
-    font-family: legofont;
-    font-weight: 400;
+ .visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 ul {
@@ -53,31 +77,142 @@ header
 */
 
 
+/* garatis */
+
 header section:first-of-type {
 
-    background-color: #F8F8F8;
+    background-color: var(--background-lightgrey);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
+    height: 3em;
+    align-items: center;
 }
+
+
 
 header section:first-of-type h2 {
     font-family: legofont;
     font-weight: 400;
-    font-size: 1em;
-    margin: 0.5em;
+    font-size: .75em;
 }
 
 header section:first-of-type a {
     font-family: legofont;
     font-weight: 400;
-    font-size: 1em;
+    font-size: .75em;
+    color: var(--color-text-link);
 }
+
+
+/* nav dingen */
 
 header section:nth-of-type(2) {
-
-    background-color: #FFFFFF; 
-    display: flex;
-    flex-direction: row;
+  border-bottom: solid 0.1em var(--color-yellow); 
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-inline: 1em;
+  align-items: center;
+  gap:.5em;
 }
+
+header section:nth-of-type(2) a:first-of-type img {
+  width: 2.5em;
+  aspect-ratio: 1/1;
+  display: block;
+}
+
+header section:nth-of-type(2) nav ul li a:first-of-type img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+header section:nth-of-type(2) button {
+  background-color: transparent;
+  border: none;   
+}
+
+header section:nth-of-type(2) button img {
+
+  width: 2.5em;
+  height: 2.5em;
+  
+}
+
+header section:nth-of-type(2)  > button {
+  order:-100;
+  
+}
+
+header section:nth-of-type(2) nav:nth-of-type(1) {
+  margin-left:auto;
+}
+
+header section:nth-of-type(2) nav:nth-of-type(1) ul {
+  background-color: var(--background-button-wit); 
+  display: flex;
+  gap: .5em;
+  border: var(--color-yellow);
+}
+
+header section:nth-of-type(2) nav:nth-of-type(2) {
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+  background-color:var(--background-button-wit);
+
+  translate: -100% 0;
+  transition: .5s;
+}
+
+header section:nth-of-type(2) nav:nth-of-type(2).toonMenu {
+  translate: 0% 0;
+}
+
+header section:nth-of-type(2) nav:nth-of-type(3) {
+  display: none;
+}
+
+
+@media (width > 40em) {
+  header section:nth-of-type(2) {
+    background-color: var(--color-yellow);
+    border-bottom: none;
+  }
+
+  header section:nth-of-type(2) nav:first-of-type {
+    order: 1;
+  }
+
+  header section:nth-of-type(2) > button {
+    display: none;
+  }
+
+  header section:nth-of-type(2) nav:nth-of-type(2) {
+    display: none;
+  }
+
+  header section:nth-of-type(2) nav:nth-of-type(3) {
+    display: block;
+  }
+
+  header section:nth-of-type(2) nav:nth-of-type(3) ul {
+    display: flex;
+    gap: 1em;
+  }
+
+}
+
+/* Footer  */
+
+footer {
+  background-color: var(--backgroundcolor-footer);
+  padding: 2em;
+}
+
+
+

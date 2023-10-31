@@ -1,80 +1,162 @@
-
+/* section 1 */
 
 main section:first-of-type {
-    background-color: #6EB9E6;
+    background-color: var(--background-zwart);
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:1em;
 }
 
 main section:first-of-type h2 {
     font-family: legofont;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    color: var(--color-text-wit);
+
+    padding:0 1rem;
+    text-align: center;
 }
 
 main section:first-of-type p {
     font-family: legofont;
     font-weight: 400;
     font-size: 1em;
-    order: -1;
-}
-
-main section:first-of-type a:first-of-type {
-    font-family: legofont;
-    font-weight: 500;
-    font-size: 1em;
-    order: -2;
-
-    display: inline-block; /* Hiermee kun je breedte en hoogte instellen voor het <a> element */
-    background-color: var(--background-button-zwart); /* Achtergrondkleur */
-    color: var(--color-text-wit); /* Tekstkleur */
-    width: 150px; /* Breedte */
-    height: 50px; /* Hoogte */
-    line-height: 50px; /* Verticaal centreren van de tekst */
-    text-align: center; /* Horizontaal centreren van de tekst */
-    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
-    border-radius: 5px; /* Optioneel: Ronde hoeken toevoegen */   
-}
-
-main section:first-of-type a:first-of-type:hover {
-    background-color: var(--background-button-wit); /* Achtergrondkleur */
-    color: var(--color-text-zwart); /* Tekstkleur */
-}
-
-main section:first-of-type a:nth-of-type(2) {
-    font-family: legofont;
-    font-weight: 500;
-    font-size: 1em;
-    order: -3;
     
-    display: inline-block; /* Hiermee kun je breedte en hoogte instellen voor het <a> element */
-    background-color: var(--background-button-zwart); /* Achtergrondkleur */
-    color: var(--color-text-wit); /* Tekstkleur */
-    width: 150px; /* Breedte */
-    height: 50px; /* Hoogte */
-    line-height: 50px; /* Verticaal centreren van de tekst */
-    text-align: center; /* Horizontaal centreren van de tekst */
-    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
-    border-radius: 5px; /* Optioneel: Ronde hoeken toevoegen */
+    margin-top: 0;
+    color: var(--color-text-wit);
+
+    padding:0 1rem;
+    text-align: center;
 }
 
-main section:first-of-type a:nth-of-type(2):hover {
-    background-color: var(--background-button-wit); /* Achtergrondkleur */
+
+main section:first-of-type ul {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:1em;
+}
+
+main section:first-of-type ul li a {
+    font-family: legofont;
+    font-weight: 500;
+    font-size: 1em;
+
+    display: flex;
+    gap:.75em;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-text-wit); /* Achtergrondkleur */
     color: var(--color-text-zwart); /* Tekstkleur */
+    width: 9em; /* Breedte */
+    line-height: 2.5em; /* Verticaal centreren van de tekst */
+ 
+    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+    border-radius: .375em; /* Optioneel: Ronde hoeken toevoegen */   
 }
 
-main section:first-of-type img {
-    width:100%;
+main section:first-of-type ul li a svg {
+    height: 1em;
+}
+
+
+main section:nth-of-type(1) ul li a:hover {
+    background-color: var(--background-zwart); /* Achtergrondkleur */
+    color: var(--color-text-wit); /* Tekstkleur */
+}
+
+
+main section:nth-of-type(1) ul li a:hover svg {
+    fill:currentColor;
+}
+
+main section:first-of-type img:first-of-type {
+    width:90%; 
+    max-width:30em;
+    height:auto;
+    order: -2;
+}
+
+main section:first-of-type img:nth-of-type(2) {
+    width:5em; 
+    height: 3.125em;
+
+    order: -1;
+
+    align-self: end;
+}
+
+@media (width > 44em) {
+    main section:first-of-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr max-content max-content 1fr;
+        column-gap: 1em;
+        justify-items: start;
+        padding-left:4em;
+    }
+
+    main section:first-of-type h2 {
+        text-align: start;
+        padding: 0em;
+    }
+
+    main section:first-of-type p {
+        text-align: start;
+        padding: 0em;
+    }
+
+    main section:first-of-type ul {
+        justify-content: start;
+        align-self: start;
+    }
+
+    main section:first-of-type img:nth-of-type(1) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+
+}
+
+@media (width > 58em) {
+    main section:first-of-type {
+        grid-template-columns: 4fr 6fr;
+        padding-left: 8em;
+    }
+
+    main section:first-of-type h2 {
+        font-size: 2em;
+    }
+
+    main section:first-of-type p {
+        font-size: 1.125em;
+        line-height: 1.75rem;
+    }
+
+}
+
+
+/* section 2 */
+
+main section:nth-of-type(2) {
+
+}
+
+main section:nth-of-type(2) a {
+    
 }
 
 
 
-main section:nth-of-type(2) h2 {
-    display: none;
-}
+/* section 3 */
 
-main section:nth-of-type(2) ul li a {
+
+main section:nth-of-type(3) ul li a {
     font-family: legofont;
     font-weight: 400;
     font-size: 0.8em;
@@ -83,81 +165,357 @@ main section:nth-of-type(2) ul li a {
 
 }
 
-main section:nth-of-type(2) ul li a:hover {
+main section:nth-of-type(3) ul li a:hover {
     text-decoration: underline;    /* chatgpt */
-
 }
 
-
-main section:nth-of-type(3) h2 {
-    font-family: legofont;
-    font-weight: 400;
+main section:nth-of-type(3) ul {
+    display: flex;
+    flex-wrap:wrap;
+    
 }
 
 main section:nth-of-type(3) ul li {
-    background-color: gold;
+    /* jouw code hier */
+    /* om te binnen 10em breed */
+    flex-basis:10em;
+    /* daarmee de overgebleven ruimte verdelen met de andere kinderen op dezelfde regel */
+    flex-grow:1;
+  }
 
-    width:20em; 
-
+  main section:nth-of-type(3) ul li a {
     display:flex;
-    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:.125em;
+    flex-direction: column-reverse;
+  }
+
+  main section:nth-of-type(3) ul li a img {
+    width: 4.625em;
+    height: 3.6875em;
+  }
+
+  
+/* section 4 */
+
+main section:nth-of-type(4) ul {
+    
+    display:flex;
+  /* als er elementen uitsteken kun je er naar toe scrollen */
+  /* https://css-tricks.com/almanac/properties/o/overflow/ */
+  overflow-x:auto;
+  padding: 1em;
 }
 
-main section:nth-of-type(3) ul li div {
+main section:nth-of-type(4) ul li {
+    /* om te zorgen dat de kinderen niet smaller worden dan hun initiele breedte */
+    flex-shrink:0;
+}
+
+
+main section:nth-of-type(4) h2 {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 1.125em;
+    padding: 1.25em;
+}
+
+main section:nth-of-type(4) ul li {
+    width:20em; 
+    display:flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+main section:nth-of-type(4) ul li h3 {
+    font-family: legofont;
+    font-weight: 500;
+    margin: 0;
+    margin-top: .5em;
+}
+
+main section:nth-of-type(4) ul li > p:nth-of-type(1) {
+    color: var(--color-yellow);
+    font-size: 1.2em;
+    margin: 0;
+}
+
+main section:nth-of-type(4) ul li p:nth-of-type(2) {
+    font-family: legofont;
+    font-weight: 700;
+    font-size: 1.125em;
+}
+
+main section:nth-of-type(4) ul li > button {
+    
+
+    width:23em;
+    height: 3.3125em;
+    font-family: legofont;
+    font-weight: 700;
+    background-color: var(--background-button-oranje);
+    border: none;
+    border-radius: 0.25em;
+
+}
+
+main section:nth-of-type(4) ul li div {
     position: relative;
 
     order:-100;
-    
-    background-color: #f44336;
+    border: 2em;
+    border: solid 0.1em var(--background-grey); 
+    width: 20em;
+    height: 20em;
 }
 
-main section:nth-of-type(3) ul li div button {
+main section:nth-of-type(4) ul li div button {
     position: absolute;
     top:1em;
     left:1em;
     color: red;
+    border: none;
+    border-radius: 3.125em;
+    
 }
 
-main section:nth-of-type(3) ul li div a {
+main section:nth-of-type(4) ul li div a {
     display: block;
-    background-color: yellow;
 
     position: relative;
     padding:1.5em;
 }
 
-main section:nth-of-type(3) ul li div a p {
+main section:nth-of-type(4) ul li div a p {
     margin:0;
 
     position:absolute;
     left:1em;
     bottom:1em;
-}
 
-main section:nth-of-type(3) ul li div a img {
-    width:100%;
-}
-
-main section:nth-of-type(4) {
-    background-color: #E5F3FF;
-}
-
-main section:nth-of-type(4) h2 {
     font-family: legofont;
-    font-weight: 700;
-    font-size: 1em;
+    font-weight: 400;
+    color: var(--color-text-zwart);
+
+    background-color: var(--color-yellow) ;
+    width: 3.5em;
+    height: 1.5em;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
 }
+
+main section:nth-of-type(4) ul li div a img {
+    width: 100%;
+    height: 15.813em;
+
+}
+
+/* section 5 */
 
 main section:nth-of-type(5) {
-    background-color: #EAEBEF;
+    background-color: var(--backgroundcolor-persoonlijk);
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: max-content max-content 1fr;
+    column-gap: .5em;
+    padding: .5em;
+
 }
 
 main section:nth-of-type(5) h2 {
     font-family: legofont;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 0.875em;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
-main section:nth-of-type(5) ul li:first-of-type {
-    background-color: #FDD629 ;
-    width: 20em;
+main section:nth-of-type(5) p {
+    font-family: legofont;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1.5625em;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+main section:nth-of-type(5) ul {
+    display: flex;
+    align-items: center;
+    gap:.75em;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    
+}
+
+main section:nth-of-type(5) ul li a {
+    font-family: legofont;
+    font-weight: 500;
+    font-size: 0.75em;
+    color: var(--color-text-link);
+}
+
+
+main section:nth-of-type(5) img:nth-of-type(1) {
+    width: 8.5em;
+    height: 8.5em;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+main section:nth-of-type(5) img:nth-of-type(2) {
+   display: none;
+}
+
+@media (width > 37.5em) {
+    /* main section:nth-of-type(5) {
+        background-color: var(--backgroundcolor-persoonlijk);
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+        grid-template-rows: max-content max-content 1fr;
+        column-gap: .5em;
+        padding: .5em;
+    
+    } */
+
+    main section:nth-of-type(5) img:nth-of-type(2) {
+        display: block;
+    }
+}
+
+
+/* section 6 */
+
+main section:nth-of-type(6) {
+    margin-top: 1em;
+    background-color: var(--background-grey);
+    padding: 1em;
+}
+
+main section:nth-of-type(6) h2 {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+main section:nth-of-type(6) ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section:nth-of-type(6) ul li h3 {
+    font-family: legofont;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main section:nth-of-type(6) ul li p {
+    font-family: legofont;
+    font-weight: 400;
+    font-size: 0.875em;;
+    order: -1;
+    text-align: center;
+    margin: 2em;
+}
+
+main section:nth-of-type(6) ul li img {
+    width: 23.25em;
+    height: 16.11em;
+}
+
+
+main section:nth-of-type(6) ul li:first-of-type {
+    background-color: var(--background-green);
+    width: 23.25em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+main section:nth-of-type(6) ul li:nth-of-type(2) {
+    background-color: var(--background-pink);
+    width: 23.25em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+main section:nth-of-type(6) ul li:nth-of-type(3) {
+    background-color: var(--background-yellow);
+    width: 23.25em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+main section:nth-of-type(6) ul li:nth-of-type(4) {
+    background-color: var(--background-blue);
+    width: 23.25em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+
+/* section 7 */
+
+main section:nth-of-type(7) {
+    background-color: var(--background-darkblue);
+}
+
+main section:nth-of-type(7) p {
+    font-family: legofont;
+    font-weight: 400;
+    color: var(--color-text-wit);
+    
+}
+
+main section:nth-of-type(7) a {
+    font-family: legofont;
+    font-weight: 500;
+    font-size: 1em;
+    order: -2;
+
+    display: inline-block; /* Hiermee kun je breedte en hoogte instellen voor het <a> element */
+    background-color: var(--color-text-wit); /* Achtergrondkleur */
+    color: var(--color-text-zwart); /* Tekstkleur */
+    width: 150px; /* Breedte */
+    height: 50px; /* Hoogte */
+    line-height: 50px; /* Verticaal centreren van de tekst */
+    text-align: center; /* Horizontaal centreren van de tekst */
+    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
+    border-radius: 5px; /* Optioneel: Ronde hoeken toevoegen */   
+}
+
+main section:nth-of-type(7) a:hover {
+    background-color: var(--background-darkblue); /* Achtergrondkleur */
+    color: var(--color-text-wit); /* Tekstkleur */
+}
+
+main section:nth-of-type(7) a img {
+    width: 24.375em;
+    height: 10.6875em;
 }
