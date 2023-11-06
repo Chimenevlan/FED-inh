@@ -58,11 +58,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-- Met de reader en highlight koppen, komen leest hij netjes de koppen voor.
+- Met de reader en highlight koppen, leest hij netjes de koppen voor.
 - Er zijn heel veel knoppen te vinden. Ook afbeeldingen zijn linken, maar doordat er zoveel "linkjes" zijn is het onduidelijk waar het nu precies voor is.
-- de bovenste knoppen krijg ik niet geselecteerd met de reader
-- De reader geeft aan als er meerdere linken naast elkaar staan. 
-
+- De reader geeft aan als er meerdere linken naast elkaar staan.
+- Geen H1
 </details>
 
 
@@ -178,12 +177,8 @@ Student 4 Kim
  
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - nogmaals gekeken naar flex en snap het nu.
+  - samen hamburger menu gedaan. 
 
 </details>
 
@@ -237,19 +232,16 @@ Student 2 Leanne
 - Hoe kan ik het beste het zwarte randje in de header maken? Met <p>?
 
 Student 3 Martin 
-
+?
 
 Student 4 Kim 
-
+?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Samen met Sanne besproken waar ik niet uitkom.
+  - De eerste section @Media uitgelegd gekregen.
+  - flex nog verder uitgewerkt. 
 
 </details>
 
