@@ -259,15 +259,19 @@ Student 4 Kim
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  - Uit eindelijk had ik echt door hoe HTML en CSS werken, dan is het ook leuk.
+  - Flex en Grid snap ik.
+  - Het stylen ging ook beter. Ik snap nu meer wat de standaard begrippen zijn van CSS.
+  - Ik heb heel veel geleerd, want ik kwam van nul kennis en nu snap ik toch wel hoe het werkt. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  - Sommige knoppen kreeg ik gewoon niet op de juiste afmeting. Alles geprobeerd, maar niet gelukt. Zoals bijvoorbeeld in de hamburger menu knop "speelplek" en in de footer de input voor email adres button. Deze kreeg ik niet tegen elkaar aan.
+  - Ik had veel problemen met dat veel dingen nog op display: block stonden of inline-block. Soms weet ik nog niet hoe ik dingen uit mijzelf kan oplossen, maar ik denk toch dat het aardig gelukt is.
+  - geprobeerd om nog animaties toe te voegen bij de in tas, maar ik kreeg het echt niet voor elkaar. Java SCript blijf ik moeilijk vinden en lastig te begrijpen.
+  - Als ik ergens tegen aanliep, dan kon ik echt in paniek schieten, misschien daarin mezelf iets rustiger houden. 
 </details>
 
 
