@@ -62,6 +62,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 - Er zijn heel veel knoppen te vinden. Ook afbeeldingen zijn linken, maar doordat er zoveel "linkjes" zijn is het onduidelijk waar het nu precies voor is.
 - De reader geeft aan als er meerdere linken naast elkaar staan.
 - Geen H1
+- Sommige hover states hebben geen duidelijk kleuren. Zoals bij de eerste section van de hoofdpagina de buttons hadden een zwarte hover, terwijl de achtergrond zwart is.
+- kleur contrast is goed. 
 </details>
 
 
@@ -195,6 +197,11 @@ Student 4 Kim
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - ik heb een H1 hidden toegevoegd. Als de gebruiker voice over gebruikt, dan word de gebruiker eerst welkom geheten.
+  - Alle section hebben een H2. Of hij is zichtbaar of hidden. Ook de h3 zijn verwerkt.
+  - Hover states duidelijker uitgewerkt met meer kleur contrast. Focus state ook. 
+  - Alle buttons hebben een aria label.
+  - alle img hebben een alt. 
 
 </details>
 
@@ -264,9 +271,7 @@ Student 4 Kim
   - Uit eindelijk had ik echt door hoe HTML en CSS werken, dan is het ook leuk.
   - Flex en Grid snap ik.
   - Het stylen ging ook beter. Ik snap nu meer wat de standaard begrippen zijn van CSS.
-  - Ik heb heel veel geleerd, want ik kwam van nul kennis en nu snap ik toch wel hoe het werkt. 
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  - Ik heb heel veel geleerd, want ik kwam van nul kennis en nu snap ik toch wel hoe het werkt.
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -284,13 +289,19 @@ Student 4 Kim
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
+  
+  - Ik heb chat gpt gebruikt om soms algemene vragen te stellen. Zoals bijvoorbeeld hoe krijg ik een lijntje onder een link vandaan of hoe krijg ik een ronde border. Vooral in het begin toen ik begon gebruikt.  
+  - Lego website inspecter ook gebruikt om soms te kijken hoe zij het gedaan hebben.
+  - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  - https://css-tricks.com/snippets/css/complete-guide-grid/
+  - https://codepen.io/Chimenevl/pen/MWLjMrP
+  - https://css-tricks.com/almanac/properties/o/overflow/
+  - https://getcssscan.com/css-buttons-examples
+  - https://getcssscan.com/css-buttons-examples
+  - https://codepen.io/cssninjaStudio/pen/GQoGgG/
+  - https://codepen.io/frederickallen/pen/NZMEMw
+  - https://www.w3schools.com/howto/howto_css_image_center.asp 
+  
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
 
 </details>
