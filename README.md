@@ -74,12 +74,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/IMG_5322.jpg" width="375px" alt="breakdown van de hele pagina"> 
-  <img src="readme-images/IMG_5323.jpg" width="375px" alt="breakdown van een dynamisch deel">
-  <img src="readme-images/IMG_5324.jpg" width="375px" alt="breakdown van een dynamisch deel">
-  <img src="readme-images/IMG_5325.jpg" width="375px" alt="breakdown van een dynamisch deel">
-  <img src="readme-images/IMG_5326.jpg" width="375px" alt="breakdown van een dynamisch deel">
-  <img src="readme-images/IMG_5327.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/IMG_5322.jpg" width="375px" alt="breakdown van productpagina"> 
+  <img src="readme-images/IMG_5323.jpg" width="375px" alt="breakdown van productpagina">
+  <img src="readme-images/IMG_5324.jpg" width="375px" alt="breakdown van productpagina">
+  <img src="readme-images/IMG_5325.jpg" width="375px" alt="breakdown van productpagina">
+  <img src="readme-images/IMG_5326.jpg" width="375px" alt="breakdown van home pagina">
+  <img src="readme-images/IMG_5327.jpg" width="375px" alt="breakdown van home pagina">
 
 
 </details>
@@ -241,10 +241,16 @@ Student 2 Leanne
 - Hoe kan ik het beste het zwarte randje in de header maken? Met <p>?
 
 Student 3 Martin 
-?
+- Hoe zorg ik ervoor dat de nav bar blijft staan
+- Mag ik hier classes gebruiken?
+- Gebruik van pixels
 
 Student 4 Kim 
-?
+- Hoe fix ik de padding bij de icoontjes in de NAV?
+- Hoe voeg ik een to top button toe
+- Hoe zat het ook en weer met de 2e pagina en de stylesheets?
+- webkit-background-clip: text; geeft een error, is dat OK?
+- Waar kan ik het beste terecht als ik hierna tegen problemen oploop met Javascript?
 
 
   ### Verslag van meeting
@@ -264,8 +270,9 @@ Student 4 Kim
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/screencapture-127-0-0-1-5500-index-html-2023-11-06-11_39_28.png" width="375px" alt="screenshot homepagina">
+  <img src="readme-images/screencapture-127-0-0-1-5500-productpage-html-2023-11-06-11_39_04.png" width="375px" alt="screenshot productpagina">
+  
 
   ### Dit ging goed/Heb ik geleerd: 
   - Uit eindelijk had ik echt door hoe HTML en CSS werken, dan is het ook leuk.
@@ -300,7 +307,8 @@ Student 4 Kim
   - https://getcssscan.com/css-buttons-examples
   - https://codepen.io/cssninjaStudio/pen/GQoGgG/
   - https://codepen.io/frederickallen/pen/NZMEMw
-  - https://www.w3schools.com/howto/howto_css_image_center.asp 
+  - https://www.w3schools.com/howto/howto_css_image_center.asp
+  - De extra informatie sessies en hulp van Sanne! 
   
 
 
