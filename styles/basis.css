@@ -26,6 +26,7 @@
     --color-purple: #956f9e;
     --color-blue: #0267b1; 
     --color-green: #008537;
+    --color-wittig: #e0e0e0;
   
 
     --background-button-zwart: #000000;
@@ -80,6 +81,16 @@ body {
   
   }
 
+body button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+}
+
+body button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
+}
+
 /* 
 header 
 */
@@ -121,10 +132,26 @@ header section:first-of-type a:hover {
 }
 
 header section:first-of-type > button {
-  background-color: #FFFFFF;
-  border: 1px solid rgb(209,213,219);
+  background-color: var(--background-button-wit);
+  border: 1px solid #d1d5db;
   border-radius: .5rem;
   box-sizing: border-box;
+}
+
+header section:first-of-type > button:hover {
+  background-color: var(--background-button-wit);
+  border: 1px solid var(--background-button-oranje);
+  border-radius: .5rem;
+  box-sizing: border-box;
+}
+
+header section:first-of-type > button:focus {
+  background-color: var(--background-button-wit);
+  border: 1px solid var(--background-button-oranje);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 0 0 3px lightskyblue;
 }
 
 /* nav dingen */
@@ -132,7 +159,6 @@ header section:first-of-type > button {
 header section:nth-of-type(2) {
   border-bottom: solid 0.1em var(--color-yellow); 
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   padding-inline: 1em;
   align-items: center;
@@ -150,13 +176,14 @@ header section:nth-of-type(2) nav ul li a:first-of-type img {
   height: 1.5em;
 }
 
+
 header section:nth-of-type(2) button {
   background-color: transparent;
   border: none;   
+  cursor: pointer;
 }
 
 header section:nth-of-type(2) button img {
-
   width: 2.5em;
   height: 2.5em;
   
@@ -188,6 +215,7 @@ header section:nth-of-type(2) nav:nth-of-type(2) {
 
   translate: -100% 0;
   transition: .5s;
+  z-index: 7;
 }
 
 header section:nth-of-type(2) nav:nth-of-type(2) ul:first-of-type {
@@ -209,7 +237,7 @@ header section:nth-of-type(2) nav:nth-of-type(2) ul:first-of-type li h2 {
 header section:nth-of-type(2) nav:nth-of-type(2) ul:first-of-type li > button  {
   width: 56px;
   height: 49px;
-  border-left: 1px solid rgb(224, 224, 224);
+  border-left: 1px solid var(--color-wittig);
 }
 
 header section:nth-of-type(2) nav:nth-of-type(2) ul:first-of-type li button > img {
@@ -225,26 +253,62 @@ header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:first-of-t
   display: flex;
   justify-content: center;
   text-align: center;
+
+  width: 350px;
+  height: 40px;
+    
+  padding: 0.3125rem 0.625rem;
+  margin: 1.5em;
+
   border-bottom: 2px solid rgba(48, 85, 181, 0.25);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
-  background: rgb(171, 217, 255);
-  color: rgb(0, 0, 0);
+  background: #abd9fe;
+  color: var(--color-text-zwart);
   font-size: 0.75rem;
   line-height: 1.75rem;
   text-transform: uppercase;
-  padding: 0.3125rem 0.625rem;
 
   font-family: legofont;
   font-weight: 500;
   font-size: 0.875em;
   color: var(--color-text-zwart);
   text-decoration: none;
+
+  /* lego website inspecter gespi */
+}
+
+header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:first-of-type > a:hover {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  width: 350px;
+  height: 40px;
+    
+  padding: 0.3125rem 0.625rem;
+  margin: 1.5em;
+
+  border-bottom: 2px solid rgba(48, 85, 181, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px;
+  background:  var(--background-button-oranje);
+  color: var(--color-text-zwart);
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--color-text-zwart);
+  text-decoration: none;
+
+  /* lego website inspecter gespi */
 }
 
 header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) {
   margin-top: 1em;
   padding: 0.9375rem 1.25rem;
-  border-bottom: 1px solid rgb(224, 224, 224);
+  border-bottom: 1px solid var(--color-wittig);
 }
 
 header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) > a {
@@ -256,10 +320,18 @@ header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-typ
   text-decoration: none;
 }
 
+header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) > a:hover {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--background-button-oranje);
+  margin: 1em;
+  text-decoration: underline;
+}
+
 header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) {
-  margin-top: 1em;
   padding: 0.9375rem 1.25rem;
-  border-bottom: 1px solid rgb(224, 224, 224);
+  border-bottom: 1px solid var(--color-wittig)
 }
 
 header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) > a {
@@ -270,8 +342,17 @@ header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-typ
   margin: 1em;
   text-decoration: none;
 }
+
+header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) > a:hover {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--background-button-oranje);
+  margin: 1em;
+  text-decoration: underline;
+}
+
 header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(4) {
-  margin-top: 1em;
   padding: 0.9375rem 1.25rem;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
@@ -284,8 +365,17 @@ header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-typ
   margin: 1em;
   text-decoration: none;
 }
+
+header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(4) > a:hover {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--background-button-oranje);
+  margin: 1em;
+  text-decoration: underline;
+}
+
 header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(5) {
-  margin-top: 1em;
   padding: 0.9375rem 1.25rem;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
@@ -298,8 +388,17 @@ header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-typ
   margin: 1em;
   text-decoration: none;
 }
+
+header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(5) > a:hover {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--background-button-oranje);
+  margin: 1em;
+  text-decoration: underline;
+}
+
 header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(6) {
-  margin-top: 1em;
   padding: 0.9375rem 1.25rem;
   border-bottom: 1px solid rgb(224, 224, 224);
 }
@@ -312,6 +411,16 @@ header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-typ
   margin: 1em;
   text-decoration: none;
 }
+
+header section:nth-of-type(2) nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(6) > a:hover {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--background-button-oranje);
+  margin: 1em;
+  text-decoration: underline;
+}
+
 
 header section:nth-of-type(2) nav:nth-of-type(2).toonMenu {
   translate: 0% 0;
@@ -381,6 +490,16 @@ header section:nth-of-type(2) nav:nth-of-type(3) {
     font-size: 1em;
     text-decoration: none;
     color: var(--color-text-zwart);
+    cursor: pointer;
+  }
+
+  header section:nth-of-type(2) nav:nth-of-type(3) ul li > button:hover {
+    font-family: legofont;
+    font-weight: 500;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--background-button-oranje);
+    cursor: pointer;
   }
 
 }
@@ -477,10 +596,10 @@ footer section:nth-of-type(2) > section:first-of-type{
 footer section:nth-of-type(2) > section:first-of-type > input {
   -webkit-box-flex: 1;
   width: 100%;
-  background: rgb(255, 255, 255);
-  color: rgb(44, 44, 44);
+  background:var(--background-button-wit);
+  color: #2c2c2c;
   height: 3.45rem;
-  border: 1px solid rgb(224, 224, 224);
+  border: 1px solid var(--color-wittig);
 }
 
 footer section:nth-of-type(2) > section:first-of-type > button {
@@ -495,9 +614,9 @@ footer section:nth-of-type(2) > section:first-of-type > button {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.1875rem;
-  background-color: rgb(253, 128, 36);
-  border-color: rgb(253, 128, 36);
-  color: rgb(0, 0, 0);
+  background-color: var(--background-button-oranje);
+  border-color: var(--background-button-oranje);
+  color: var(--color-text-zwart);
   position: relative;
   border-width: 2px;
 }

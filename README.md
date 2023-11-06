@@ -58,12 +58,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-- Met de reader en highlight koppen, leest hij netjes de koppen voor.
+- Met de reader en highlight koppen, komen leest hij netjes de koppen voor.
 - Er zijn heel veel knoppen te vinden. Ook afbeeldingen zijn linken, maar doordat er zoveel "linkjes" zijn is het onduidelijk waar het nu precies voor is.
-- De reader geeft aan als er meerdere linken naast elkaar staan.
-- Geen H1
-- Sommige hover states hebben geen duidelijk kleuren. Zoals bij de eerste section van de hoofdpagina de buttons hadden een zwarte hover, terwijl de achtergrond zwart is.
-- kleur contrast is goed. 
+- de bovenste knoppen krijg ik niet geselecteerd met de reader
+- De reader geeft aan als er meerdere linken naast elkaar staan. 
+
 </details>
 
 
@@ -74,12 +73,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/IMG_5322.jpg" width="375px" alt="breakdown van productpagina"> 
-  <img src="readme-images/IMG_5323.jpg" width="375px" alt="breakdown van productpagina">
-  <img src="readme-images/IMG_5324.jpg" width="375px" alt="breakdown van productpagina">
-  <img src="readme-images/IMG_5325.jpg" width="375px" alt="breakdown van productpagina">
-  <img src="readme-images/IMG_5326.jpg" width="375px" alt="breakdown van home pagina">
-  <img src="readme-images/IMG_5327.jpg" width="375px" alt="breakdown van home pagina">
+  <img src="readme-images/breakdown schets.png" width="375px" alt="breakdown van de hele pagina">
+
+  ### dynamisch deel (bijv menu): 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 
 </details>
@@ -181,8 +178,12 @@ Student 4 Kim
  
 
   ### Verslag van meeting
-  - nogmaals gekeken naar flex en snap het nu.
-  - samen hamburger menu gedaan. 
+  hier na afloop snel de uitkomsten van de meeting vastleggen
+
+  - punt 1
+  - punt 2
+  - nog een punt
+- ...
 
 </details>
 
@@ -197,11 +198,6 @@ Student 4 Kim
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  - ik heb een H1 hidden toegevoegd. Als de gebruiker voice over gebruikt, dan word de gebruiker eerst welkom geheten.
-  - Alle section hebben een H2. Of hij is zichtbaar of hidden. Ook de h3 zijn verwerkt.
-  - Hover states duidelijker uitgewerkt met meer kleur contrast. Focus state ook. 
-  - Alle buttons hebben een aria label.
-  - alle img hebben een alt. 
 
 </details>
 
@@ -241,22 +237,19 @@ Student 2 Leanne
 - Hoe kan ik het beste het zwarte randje in de header maken? Met <p>?
 
 Student 3 Martin 
-- Hoe zorg ik ervoor dat de nav bar blijft staan
-- Mag ik hier classes gebruiken?
-- Gebruik van pixels
+
 
 Student 4 Kim 
-- Hoe fix ik de padding bij de icoontjes in de NAV?
-- Hoe voeg ik een to top button toe
-- Hoe zat het ook en weer met de 2e pagina en de stylesheets?
-- webkit-background-clip: text; geeft een error, is dat OK?
-- Waar kan ik het beste terecht als ik hierna tegen problemen oploop met Javascript?
+
 
 
   ### Verslag van meeting
-  - Samen met Sanne besproken waar ik niet uitkom.
-  - De eerste section @Media uitgelegd gekregen.
-  - flex nog verder uitgewerkt. 
+  hier na afloop snel de uitkomsten van de meeting vastleggen
+
+  - punt 1
+  - punt 2
+  - nog een punt
+  - ...
 
 </details>
 
@@ -270,22 +263,19 @@ Student 4 Kim
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/screencapture-127-0-0-1-5500-index-html-2023-11-06-11_39_28.png" width="375px" alt="screenshot homepagina">
-  <img src="readme-images/screencapture-127-0-0-1-5500-productpage-html-2023-11-06-11_39_04.png" width="375px" alt="screenshot productpagina">
-  
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+
 
   ### Dit ging goed/Heb ik geleerd: 
-  - Uit eindelijk had ik echt door hoe HTML en CSS werken, dan is het ook leuk.
-  - Flex en Grid snap ik.
-  - Het stylen ging ook beter. Ik snap nu meer wat de standaard begrippen zijn van CSS.
-  - Ik heb heel veel geleerd, want ik kwam van nul kennis en nu snap ik toch wel hoe het werkt.
+  Korte omschrijving met plaatjes
+
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  - Sommige knoppen kreeg ik gewoon niet op de juiste afmeting. Alles geprobeerd, maar niet gelukt. Zoals bijvoorbeeld in de hamburger menu knop "speelplek" en in de footer de input voor email adres button. Deze kreeg ik niet tegen elkaar aan.
-  - Ik had veel problemen met dat veel dingen nog op display: block stonden of inline-block. Soms weet ik nog niet hoe ik dingen uit mijzelf kan oplossen, maar ik denk toch dat het aardig gelukt is.
-  - geprobeerd om nog animaties toe te voegen bij de in tas, maar ik kreeg het echt niet voor elkaar. Java SCript blijf ik moeilijk vinden en lastig te begrijpen.
-  - Als ik ergens tegen aanliep, dan kon ik echt in paniek schieten, misschien daarin mezelf iets rustiger houden. 
+  Korte omschrijving met plaatjes
+
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -296,20 +286,13 @@ Student 4 Kim
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
-  
-  - Ik heb chat gpt gebruikt om soms algemene vragen te stellen. Zoals bijvoorbeeld hoe krijg ik een lijntje onder een link vandaan of hoe krijg ik een ronde border. Vooral in het begin toen ik begon gebruikt.  
-  - Lego website inspecter ook gebruikt om soms te kijken hoe zij het gedaan hebben.
-  - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-  - https://css-tricks.com/snippets/css/complete-guide-grid/
-  - https://codepen.io/Chimenevl/pen/MWLjMrP
-  - https://css-tricks.com/almanac/properties/o/overflow/
-  - https://getcssscan.com/css-buttons-examples
-  - https://getcssscan.com/css-buttons-examples
-  - https://codepen.io/cssninjaStudio/pen/GQoGgG/
-  - https://codepen.io/frederickallen/pen/NZMEMw
-  - https://www.w3schools.com/howto/howto_css_image_center.asp
-  - De extra informatie sessies en hulp van Sanne! 
-  
 
+  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
+  Nb. ChatGpT en andere AI horen er ook bij.
+  Nb. Vermeld de bronnen ook in je code.
+
+  1. bron 1
+  2. bron 2
+  3. ...
 
 </details>

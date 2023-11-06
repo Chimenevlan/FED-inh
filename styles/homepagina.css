@@ -54,7 +54,7 @@ main section:first-of-type ul li a {
     line-height: 2.5em; /* Verticaal centreren van de tekst */
  
     text-decoration: none; /* Verwijder de standaard onderstreping van de link */
-    border-radius: .375em; /* Optioneel: Ronde hoeken toevoegen */   
+    border-radius: .375em; /* Ronde hoeken toevoegen */   
 }
 
 main section:first-of-type ul li a svg {
@@ -63,8 +63,8 @@ main section:first-of-type ul li a svg {
 
 
 main section:nth-of-type(1) ul li a:hover {
-    background-color: var(--background-zwart); /* Achtergrondkleur */
-    color: var(--color-text-wit); /* Tekstkleur */
+    background-color: #956f9e; 
+    color: var(--color-text-wit); 
 }
 
 
@@ -154,6 +154,7 @@ main section:nth-of-type(2) ul li a {
 
 main section:nth-of-type(2) ul li a:hover {
     text-decoration: underline;    /* chatgpt */
+    color: var(--background-button-oranje);
 }
 
 main section:nth-of-type(2) ul {
@@ -163,10 +164,7 @@ main section:nth-of-type(2) ul {
 }
 
 main section:nth-of-type(2) ul li {
-    /* jouw code hier */
-    /* om te binnen 10em breed */
     flex-basis:10em;
-    /* daarmee de overgebleven ruimte verdelen met de andere kinderen op dezelfde regel */
     flex-grow:1;
   }
 
@@ -235,8 +233,6 @@ main section:nth-of-type(3) ul li p:nth-of-type(2) {
 }
 
 main section:nth-of-type(3) ul li > button {
-    
-
     width:23em;
     height: 3.3125em;
     font-family: legofont;
@@ -244,7 +240,19 @@ main section:nth-of-type(3) ul li > button {
     background-color: var(--background-button-oranje);
     border: none;
     border-radius: 0.25em;
+    cursor: pointer;
+}
 
+main section:nth-of-type(3) ul li > button:hover {
+    width:23em;
+    height: 3.3125em;
+    font-family: legofont;
+    font-weight: 700;
+    background-color: var(--background-blue);
+    border: 1px solid var(--background-orange);
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
 }
 
 main section:nth-of-type(3) ul li div {
@@ -264,7 +272,17 @@ main section:nth-of-type(3) ul li div button {
     color: red;
     border: none;
     border-radius: 3.125em;
-    
+    cursor: pointer;
+}
+
+main section:nth-of-type(3) ul li div button:hover {
+    position: absolute;
+    top:1em;
+    left:1em;
+    color: var(--background-button-oranje);
+    border: none;
+    border-radius: 3.125em;
+    cursor: pointer;
 }
 
 main section:nth-of-type(3) ul li div a {
