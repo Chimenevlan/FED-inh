@@ -284,8 +284,6 @@ Student 4 Kim
   - geprobeerd om nog animaties toe te voegen bij de in tas, maar ik kreeg het echt niet voor elkaar. Java SCript blijf ik moeilijk vinden en lastig te begrijpen.
   - Als ik ergens tegen aanliep, dan kon ik echt in paniek schieten, misschien daarin mezelf iets rustiger houden. 
   - Toch nog gestructureerder werken. Denk als je dit vaker doet, dat je steeds netter gaat werken en met meer structuur. 
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
