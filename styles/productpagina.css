@@ -1,0 +1,939 @@
+
+
+/* nav 1 */
+
+main nav:first-of-type ul {
+    display: flex;
+    gap:.25em;
+    padding: 1em;
+}
+
+main nav:first-of-type ul li:not(:last-of-type) {
+  display:flex;
+  gap:.25em;  
+}
+
+main nav:first-of-type ul li:not(:last-of-type)::after {
+  content:">";
+}
+
+main nav:first-of-type ul li:first-of-type > a {
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.875em;
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+main nav:first-of-type ul li:nth-of-type(2) {
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.875em;
+  color: var(--color-text-black)
+}
+
+/* section 1  */
+
+main > section:first-of-type {
+  position: relative;
+  margin: 1.125em;
+  overflow: hidden;
+}
+
+
+main section:first-of-type ul  {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  
+}
+
+main section:first-of-type ul li {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+main section:first-of-type ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+
+main section:first-of-type p {
+  position: absolute;
+  top: 1em;
+  left: .5em;
+  margin: 0;
+
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.875em;
+  color: var(--color-text-wit);
+
+  background-color: #5e5e5e;
+  padding: 0.3125em 0.625em;
+  border-radius: 6.25em;
+  box-sizing: border-box;
+}
+
+main section:first-of-type button {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  margin: 0;
+
+  padding: .75em;
+
+  border: none; /* Verwijder de standaard rand van de knop */
+  border-radius: 0.625em; /* Ronde hoeken met een straal van 0.625em je kunt de waarde aanpassen */
+  background-color: #005595; /* Tekstkleur voor betere leesbaarheid op de blauwe achtergrond */
+  cursor: pointer; /* Verander de muisaanwijzer wanneer over de knop wordt bewogen */
+}
+
+main section:first-of-type button > img {
+  width: 1em;
+  height: 1em;
+}
+
+
+/* section 2  */
+main > section:nth-of-type(2) {
+  margin: 1.125em;
+}
+
+/* grid section 2 */
+main section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3.25em 4.1em 3.25em 2.5em 3.25em 6.3em 6.3em;
+  
+  gap: 0.5em;
+} 
+
+/* section 2/1 */
+main section:nth-of-type(2) section:first-of-type {
+  display: flex;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+main section:nth-of-type(2) section:first-of-type h2 {
+  display: inline-block;
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/* section 2/2 */
+main section:nth-of-type(2) section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) p:first-of-type {
+  font-family: legofont;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+main section:nth-of-type(2) section:nth-of-type(2) p:nth-of-type(2) {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.85em;
+  color: var(--color-green);
+  margin: 0;
+}
+
+/* section 2/3 */
+main section:nth-of-type(2) section:nth-of-type(3)  {
+  display: flex;
+  flex-direction: column;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: start;
+}
+
+main section:nth-of-type(2) section:nth-of-type(3) > ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main section:nth-of-type(2) section:nth-of-type(3) > ul > li {
+  width: 100%;
+  padding: .2em;
+}
+
+
+
+main section:nth-of-type(2) section:nth-of-type(3) > ul > li:first-of-type > p {
+  display: inline-block;
+  background-color: var(--background-yellow);
+  padding: 0.27em 0.625em;
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: var(--color-text-black);
+  margin: 0;
+  
+}
+
+main section:nth-of-type(2) section:nth-of-type(3) > ul > li:nth-of-type(2) > p  {
+  display: inline-block;
+  background-color: var(--background-yellow);
+  padding: 0.27em 0.625em;
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: var(--color-text-black);
+  margin: 0;
+}
+
+/* section 2/4 */
+main section:nth-of-type(2) section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+main section:nth-of-type(2) section:nth-of-type(4) > p {
+  color: var(--color-yellow);
+  font-size: 1.2em;
+  margin: 0;
+}
+
+
+main section:nth-of-type(2) section:nth-of-type(4) > a {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.9em;
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+/* section 2/5 */
+main section:nth-of-type(2) section:nth-of-type(5) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  place-self: center;
+}
+
+/* section 2/6 */
+main section:nth-of-type(2) section:nth-of-type(6) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+main section:nth-of-type(2) > section:nth-of-type(6) > p {
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #2c2c2c;
+}
+
+main section:nth-of-type(2) > section:nth-of-type(6) > button {
+  border: 0.1em solid;
+  border-color: #919191;
+  cursor: pointer;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  background-color: transparent;
+  color: #919191;
+  align-items: center;
+  font-family: legofont;
+  font-weight: 400;
+}
+
+/* section 2/7 */
+main section:nth-of-type(2) > section:nth-of-type(7) {
+  display: flex;
+  flex-direction: row;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+main section:nth-of-type(2) > section:nth-of-type(7) > input {
+  width: 2.5em;
+  text-align: center;
+
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 0.06em solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 0.06em 0.18em 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+
+  padding: calc(.875em - 0.06em) calc(1.5em - 0.06em);
+  position: relative;
+  text-decoration: none;
+  width: auto;
+
+  color: var(--color-text-black);
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(2) > section:nth-of-type(7) > button:first-of-type {
+  width: 2.5em;
+  text-align: center;
+  order: -1;
+
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 0.06em solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 0.06em 0.18em 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+
+  padding: calc(.875em - 0.06em) calc(1.5em - 0.18em);
+  position: relative;
+  text-decoration: none;
+  width: auto;
+
+  color: var(--color-text-black);
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(2) > section:nth-of-type(7) > button:nth-of-type(2) {
+  width: 2.5em;
+  text-align: center;
+
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 0.06em solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 0.06em 0.18em 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+ 
+  padding: calc(.875em - 0.06em) calc(1.5em - 0.18em);
+  position: relative;
+  text-decoration: none;
+  width: auto;
+
+  color: var(--color-text-black);
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* https://getcssscan.com/css-buttons-examples */
+
+/* section 2/8 */
+main section:nth-of-type(2) > section:nth-of-type(8) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  
+}
+
+main section:nth-of-type(2) > section:nth-of-type(8) > button:first-of-type {
+  background-color: var(--background-orange);
+  border: 0;
+  border-radius: 6.25em;
+  
+  color: var(--color-text-black);
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.9em;
+
+  min-width: auto;
+  width: 100%;
+  line-height: normal;
+  overflow: hidden;
+  padding: 1em;
+ 
+  text-align: center;
+
+}
+
+/* https://getcssscan.com/css-buttons-examples */
+
+main section:nth-of-type(2) section:nth-of-type(8) > button:nth-of-type(2) {
+  position: relative;
+  width: 3.25em;
+  height: 3.25em;
+  border: 0;
+  border-radius: 50%;
+  background: #f2f2f2;
+ 
+  align-items:center;
+  margin: 0 auto;
+  text-decoration: none;
+  overflow: hidden;
+
+}
+
+/* https://codepen.io/cssninjaStudio/pen/GQoGgG/ */
+
+/* section 2/9  */
+
+main section:nth-of-type(2) section:nth-of-type(9)  {
+  background-color: var(--backgroundcolor-persoonlijk);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr;
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+} 
+
+main section:nth-of-type(2) section:nth-of-type(9) > p {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+}
+
+main section:nth-of-type(2) section:nth-of-type(9) > a {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+main section:nth-of-type(2) section:nth-of-type(9) > img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  place-self: center;
+  width: 5em;
+  height: 3.75em;
+}
+ 
+/* section 2/10 */
+main section:nth-of-type(2) section:nth-of-type(10)  {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  align-items: end;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+main section:nth-of-type(2) section:nth-of-type(10) > p:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin: 0;
+
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.875em;
+}
+
+main section:nth-of-type(2) section:nth-of-type(10) > p:nth-of-type(2) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.875em;
+
+}
+
+main section:nth-of-type(2) section:nth-of-type(10) > img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  place-self: center;
+  width: 3.75em;
+  height: 3.75em;
+}
+
+
+/* section 3 */
+main > section:nth-of-type(3) {
+  margin: 1.125em;
+}
+
+main > section:nth-of-type(3) ul:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+main > section:nth-of-type(3) li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-left: 0.06em solid rgb(224, 224, 224);
+  margin-top: 1em;
+}
+
+
+main section:nth-of-type(3) ul li h2 {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.75em;
+
+  order: 2;
+
+  text-align: center;
+}
+
+main section:nth-of-type(3) ul li img {
+  order: -1;
+}
+
+main section:nth-of-type(3) ul li p {
+  margin: 0.625rem 0;
+  text-align: center;
+}
+
+main section:nth-of-type(3) ul li:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+main section:nth-of-type(3) ul li:first-of-type img {
+  width: 2.125em;
+  height: 2.5em;
+}
+
+main section:nth-of-type(3) ul li:first-of-type p {
+  font-family: legofont;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(2) img {
+  width: 2.06em;
+  height: 2.5em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(2) p {
+  font-family: legofont;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(3) img {
+  width: 1.75em;
+  height: 2.375em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(3) p {
+  font-family: legofont;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(4) img {
+  width: 2.25em;
+  height: 2.25em;
+
+  margin: 0.3em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(4) p {
+  font-family: legofont;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(5) img {
+  width: 1.75em;
+  height: 2.625em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(5) p {
+  font-family: legofont;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(6) img {
+  width: 2.5625em;
+  height: 2.125em;
+  margin-bottom: .8em;
+}
+
+main section:nth-of-type(3) ul li:nth-of-type(6) p {
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.75em;
+
+  margin: 0;
+}
+
+
+
+/* section 4  */
+main section:nth-of-type(4) {
+  margin: 0;
+}
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  border-top: 0.06em solid #e0e0e0;
+  background-color: #F8F8F8;
+  position: relative;
+  cursor: pointer;
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 1.125em;
+  list-style: none;
+  padding: 1.125em;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+  padding-right: 1.125em;
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+details summary {
+  outline: 0;
+}
+
+/* https://codepen.io/frederickallen/pen/NZMEMw */
+
+/* details 1 */
+details:nth-of-type(1) ul li:first-of-type {
+background-color: #6EB9E7;
+}
+
+details:nth-of-type(1) ul li:first-of-type p:first-of-type {
+  margin-left: 1.125em;
+  margin-right: 1.125em;
+  margin-top: 0;
+  padding-top: 1em;
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 1.125em;
+  text-align: center;
+}
+
+details:nth-of-type(1) ul li:first-of-type p:nth-of-type(2) {
+  margin: 1.125em;
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+details:nth-of-type(1) ul li:first-of-type img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* details 2 */
+details:nth-of-type(2) > p {
+  margin: 1.125em;
+  font-family: legofont;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+details:nth-of-type(2) > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  /* https://www.w3schools.com/howto/howto_css_image_center.asp */
+}
+
+
+@media (width > 56.25em) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4.0625em 37.5em 13.75em 1fr;
+  }
+
+  main nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    border-bottom: 0.1em solid;
+    border-color: #f2f2f2;
+  }
+
+  main > section:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    border: 0.1em solid;
+    border-color: #f2f2f2;
+  }
+
+  main > section:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    border: 0.1em solid;
+    border-color: #f2f2f2;
+
+    padding: 1em;
+  }
+
+  main section:nth-of-type(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  main > section:nth-of-type(3) ul:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  main section:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+
+
+main > section:nth-of-type(5) {
+  background-color: var(--backgroundcolor-persoonlijk);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 5.3em 1fr 3em;
+
+  margin: 1.125em;
+}
+
+main > section:nth-of-type(5) h2 {
+  font-family: legofont;
+  font-weight: 700;
+  font-size: 0.875em;
+  line-height: 2em;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+main > section:nth-of-type(5) p {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 1.5625em;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+}
+
+main > section:nth-of-type(5) ul {
+  display: flex;
+  align-items: center;
+  gap:.75em;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  
+}
+
+main > section:nth-of-type(5) ul li a {
+  font-family: legofont;
+  font-weight: 500;
+  font-size: 0.75em;
+  color: var(--color-text-link);
+}
+
+
+main > section:nth-of-type(5) img:nth-of-type(1) {
+  width: 6.25em;
+  height: 6.25em;
+  margin: 1em;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+main > section:nth-of-type(5) img:nth-of-type(2) {
+ display: none;
+}
+
+@media (width > 49.6875em) {
+
+  main > section:nth-of-type(5) {
+      display: grid;
+      grid-template-columns: 8em 2fr 1fr;
+      grid-template-rows: 2em 1fr 2em; 
+  }
+
+  main > section:nth-of-type(5) img:nth-of-type(2) {
+      display: block;
+
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+  main > section:nth-of-type(5) img:nth-of-type(1) {
+      width: 6.25em;
+      height: 6.25em;
+      margin: 1em;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+  
+  }
+}
+
+@media (width > 37.5em) {
+
+  main > section:nth-of-type(5) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 4em 1fr 3em;
+  }
+
+  main > section:nth-of-type(4) img:nth-of-type(2) {
+      display: block;
+
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+  main > section:nth-of-type(5) img:nth-of-type(1) {
+      width: 6.25em;
+      height: 6.25em;
+      margin: 1em;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+  
+  }
+}

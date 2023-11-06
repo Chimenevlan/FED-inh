@@ -141,22 +141,9 @@ main section:first-of-type img:nth-of-type(2) {
 }
 
 
+
 /* section 2 */
-
-main section:nth-of-type(2) {
-
-}
-
-main section:nth-of-type(2) a {
-    
-}
-
-
-
-/* section 3 */
-
-
-main section:nth-of-type(3) ul li a {
+main section:nth-of-type(2) ul li a {
     font-family: legofont;
     font-weight: 400;
     font-size: 0.8em;
@@ -165,17 +152,17 @@ main section:nth-of-type(3) ul li a {
 
 }
 
-main section:nth-of-type(3) ul li a:hover {
+main section:nth-of-type(2) ul li a:hover {
     text-decoration: underline;    /* chatgpt */
 }
 
-main section:nth-of-type(3) ul {
+main section:nth-of-type(2) ul {
     display: flex;
     flex-wrap:wrap;
     
 }
 
-main section:nth-of-type(3) ul li {
+main section:nth-of-type(2) ul li {
     /* jouw code hier */
     /* om te binnen 10em breed */
     flex-basis:10em;
@@ -183,7 +170,7 @@ main section:nth-of-type(3) ul li {
     flex-grow:1;
   }
 
-  main section:nth-of-type(3) ul li a {
+  main section:nth-of-type(2) ul li a {
     display:flex;
     justify-content:center;
     align-items:center;
@@ -191,15 +178,15 @@ main section:nth-of-type(3) ul li {
     flex-direction: column-reverse;
   }
 
-  main section:nth-of-type(3) ul li a img {
+  main section:nth-of-type(2) ul li a img {
     width: 4.625em;
     height: 3.6875em;
   }
 
   
-/* section 4 */
+/* section 3 */
 
-main section:nth-of-type(4) ul {
+main section:nth-of-type(3) ul {
     
     display:flex;
   /* als er elementen uitsteken kun je er naar toe scrollen */
@@ -208,46 +195,46 @@ main section:nth-of-type(4) ul {
   padding: 1em;
 }
 
-main section:nth-of-type(4) ul li {
+main section:nth-of-type(3) ul li {
     /* om te zorgen dat de kinderen niet smaller worden dan hun initiele breedte */
     flex-shrink:0;
 }
 
 
-main section:nth-of-type(4) h2 {
+main section:nth-of-type(3) h2 {
     font-family: legofont;
     font-weight: 400;
     font-size: 1.125em;
     padding: 1.25em;
 }
 
-main section:nth-of-type(4) ul li {
+main section:nth-of-type(3) ul li {
     width:20em; 
     display:flex;
     flex-direction: column;
     margin: 1em;
 }
 
-main section:nth-of-type(4) ul li h3 {
+main section:nth-of-type(3) ul li h3 {
     font-family: legofont;
     font-weight: 500;
     margin: 0;
     margin-top: .5em;
 }
 
-main section:nth-of-type(4) ul li > p:nth-of-type(1) {
+main section:nth-of-type(3) ul li > p:nth-of-type(1) {
     color: var(--color-yellow);
     font-size: 1.2em;
     margin: 0;
 }
 
-main section:nth-of-type(4) ul li p:nth-of-type(2) {
+main section:nth-of-type(3) ul li p:nth-of-type(2) {
     font-family: legofont;
     font-weight: 700;
     font-size: 1.125em;
 }
 
-main section:nth-of-type(4) ul li > button {
+main section:nth-of-type(3) ul li > button {
     
 
     width:23em;
@@ -260,7 +247,7 @@ main section:nth-of-type(4) ul li > button {
 
 }
 
-main section:nth-of-type(4) ul li div {
+main section:nth-of-type(3) ul li div {
     position: relative;
 
     order:-100;
@@ -270,7 +257,7 @@ main section:nth-of-type(4) ul li div {
     height: 20em;
 }
 
-main section:nth-of-type(4) ul li div button {
+main section:nth-of-type(3) ul li div button {
     position: absolute;
     top:1em;
     left:1em;
@@ -280,14 +267,14 @@ main section:nth-of-type(4) ul li div button {
     
 }
 
-main section:nth-of-type(4) ul li div a {
+main section:nth-of-type(3) ul li div a {
     display: block;
 
     position: relative;
     padding:1.5em;
 }
 
-main section:nth-of-type(4) ul li div a p {
+main section:nth-of-type(3) ul li div a p {
     margin:0;
 
     position:absolute;
@@ -308,34 +295,33 @@ main section:nth-of-type(4) ul li div a p {
 
 }
 
-main section:nth-of-type(4) ul li div a img {
+main section:nth-of-type(3) ul li div a img {
     width: 100%;
     height: 15.813em;
 
 }
 
-/* section 5 */
+/* section 4 */
 
-main section:nth-of-type(5) {
+main section:nth-of-type(4) {
     background-color: var(--backgroundcolor-persoonlijk);
     display: grid;
-    grid-template-columns: 2fr 8fr;
-    grid-template-rows: max-content max-content 1fr;
-    column-gap: .5em;
-    padding: .5em;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 5.3em 1fr 3em;
 
+    margin: 1.125em;
 }
 
-main section:nth-of-type(5) h2 {
+main section:nth-of-type(4) h2 {
     font-family: legofont;
     font-weight: 700;
     font-size: 0.875em;
-
+    line-height: 2em;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
-main section:nth-of-type(5) p {
+main section:nth-of-type(4) p {
     font-family: legofont;
     font-weight: 500;
     font-size: 0.75em;
@@ -346,7 +332,7 @@ main section:nth-of-type(5) p {
     grid-row-start: 2;
 }
 
-main section:nth-of-type(5) ul {
+main section:nth-of-type(4) ul {
     display: flex;
     align-items: center;
     gap:.75em;
@@ -357,7 +343,7 @@ main section:nth-of-type(5) ul {
     
 }
 
-main section:nth-of-type(5) ul li a {
+main section:nth-of-type(4) ul li a {
     font-family: legofont;
     font-weight: 500;
     font-size: 0.75em;
@@ -365,10 +351,10 @@ main section:nth-of-type(5) ul li a {
 }
 
 
-main section:nth-of-type(5) img:nth-of-type(1) {
-    width: 8.5em;
-    height: 8.5em;
-
+main section:nth-of-type(4) img:nth-of-type(1) {
+    width: 6.25em;
+    height: 6.25em;
+    margin: 1em;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -376,36 +362,80 @@ main section:nth-of-type(5) img:nth-of-type(1) {
 
 }
 
-main section:nth-of-type(5) img:nth-of-type(2) {
+main section:nth-of-type(4) img:nth-of-type(2) {
    display: none;
 }
 
-@media (width > 37.5em) {
-    /* main section:nth-of-type(5) {
-        background-color: var(--backgroundcolor-persoonlijk);
-        display: grid;
-        grid-template-columns: 2fr 8fr;
-        grid-template-rows: max-content max-content 1fr;
-        column-gap: .5em;
-        padding: .5em;
-    
-    } */
+@media (width > 49.6875em) {
 
-    main section:nth-of-type(5) img:nth-of-type(2) {
+    main section:nth-of-type(4) {
+        display: grid;
+        grid-template-columns: 8em 2fr 1fr;
+        grid-template-rows: 2em 1fr 2em; 
+    }
+
+    main section:nth-of-type(4) img:nth-of-type(2) {
         display: block;
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    main section:nth-of-type(4) img:nth-of-type(1) {
+        width: 6.25em;
+        height: 6.25em;
+        margin: 1em;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    
+    }
+}
+
+@media (width > 37.5em) {
+
+    main section:nth-of-type(4) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 4em 1fr 3em;
+    }
+
+    main section:nth-of-type(4) img:nth-of-type(2) {
+        display: block;
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    main section:nth-of-type(4) img:nth-of-type(1) {
+        width: 6.25em;
+        height: 6.25em;
+        margin: 1em;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    
     }
 }
 
 
-/* section 6 */
 
-main section:nth-of-type(6) {
+
+/* section 5 */
+
+main section:nth-of-type(5) {
     margin-top: 1em;
     background-color: var(--background-grey);
     padding: 1em;
 }
 
-main section:nth-of-type(6) h2 {
+main section:nth-of-type(5) h2 {
     font-family: legofont;
     font-weight: 400;
     font-size: 1.5em;
@@ -413,21 +443,21 @@ main section:nth-of-type(6) h2 {
     margin-top: 1em;
 }
 
-main section:nth-of-type(6) ul {
+main section:nth-of-type(5) ul {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-main section:nth-of-type(6) ul li h3 {
+main section:nth-of-type(5) ul li h3 {
     font-family: legofont;
     font-weight: 700;
     text-align: center;
     margin-bottom: 0;
 }
 
-main section:nth-of-type(6) ul li p {
+main section:nth-of-type(5) ul li p {
     font-family: legofont;
     font-weight: 400;
     font-size: 0.875em;;
@@ -436,15 +466,16 @@ main section:nth-of-type(6) ul li p {
     margin: 2em;
 }
 
-main section:nth-of-type(6) ul li img {
+main section:nth-of-type(5) ul li img {
     width: 23.25em;
     height: 16.11em;
 }
 
 
-main section:nth-of-type(6) ul li:first-of-type {
+main section:nth-of-type(5) ul li:first-of-type {
     background-color: var(--background-green);
     width: 23.25em;
+    height:25em;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -452,70 +483,51 @@ main section:nth-of-type(6) ul li:first-of-type {
 }
 
 
-main section:nth-of-type(6) ul li:nth-of-type(2) {
+main section:nth-of-type(5) ul li:nth-of-type(2) {
     background-color: var(--background-pink);
     width: 23.25em;
+    height:25em;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     margin-bottom: 1em;
 }
 
-main section:nth-of-type(6) ul li:nth-of-type(3) {
+main section:nth-of-type(5) ul li:nth-of-type(3) {
     background-color: var(--background-yellow);
     width: 23.25em;
+    height:25em;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     margin-bottom: 1em;
 }
 
-main section:nth-of-type(6) ul li:nth-of-type(4) {
+main section:nth-of-type(5) ul li:nth-of-type(4) {
     background-color: var(--background-blue);
     width: 23.25em;
+    height:25em;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     margin-bottom: 1em;
 }
 
+@media (width > 37.5em) {
 
-/* section 7 */
+    main section:nth-of-type(5) > ul {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 1em;
+    }
 
-main section:nth-of-type(7) {
-    background-color: var(--background-darkblue);
 }
 
-main section:nth-of-type(7) p {
-    font-family: legofont;
-    font-weight: 400;
-    color: var(--color-text-wit);
-    
-}
+@media (width > 93.75em) {
 
-main section:nth-of-type(7) a {
-    font-family: legofont;
-    font-weight: 500;
-    font-size: 1em;
-    order: -2;
+    main section:nth-of-type(5) > ul {
+        display: flex;
+        flex-direction: row;
+    }
 
-    display: inline-block; /* Hiermee kun je breedte en hoogte instellen voor het <a> element */
-    background-color: var(--color-text-wit); /* Achtergrondkleur */
-    color: var(--color-text-zwart); /* Tekstkleur */
-    width: 150px; /* Breedte */
-    height: 50px; /* Hoogte */
-    line-height: 50px; /* Verticaal centreren van de tekst */
-    text-align: center; /* Horizontaal centreren van de tekst */
-    text-decoration: none; /* Verwijder de standaard onderstreping van de link */
-    border-radius: 5px; /* Optioneel: Ronde hoeken toevoegen */   
-}
-
-main section:nth-of-type(7) a:hover {
-    background-color: var(--background-darkblue); /* Achtergrondkleur */
-    color: var(--color-text-wit); /* Tekstkleur */
-}
-
-main section:nth-of-type(7) a img {
-    width: 24.375em;
-    height: 10.6875em;
 }
